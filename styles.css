@@ -1,0 +1,53 @@
+body{
+    background-color: #333333;
+}
+
+.change{
+    opacity: 0.25;
+    margin-bottom: 1rem;
+}
+.change:hover{
+    fill: white;
+    opacity: 1;
+}
+
+
+header nav a{
+    color: #C0D0EA;
+    font-weight: 500;
+}
+header nav a:hover{
+    color: #77A1E6 !important;
+}
+
+header button{
+    background-color: #354866 !important;
+    color: #C0D0EA;
+    font-weight: 500;
+}
+header button:hover{
+    background-color: #77A1E6 !important;
+}
+
+.head1{
+    color: #77A1E6 !important;
+}
+.head2{
+    color: #C0D0EA !important;
+}
+.head3{
+    color: #5D7EB3 !important;
+}
+.cont{
+    color: #5D7EB3;
+    font-weight: 500;
+}
+
+.bt1{
+    background: transparent !important;
+    border: 3px solid  #77A1E6 !important;
+}
+
+.bt1:hover{
+    background-color: #354866 !important ;
+}
