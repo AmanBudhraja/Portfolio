@@ -11,7 +11,7 @@ const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
-  navbar.style.top = prevScroll > currentScroll ? "0" : "-80px";
+  navbar.style.top = prevScroll > currentScroll ? "0": "-80px";
   prevScroll = currentScroll;
 });
 
