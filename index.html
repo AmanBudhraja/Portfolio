@@ -1,664 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" href="./assets/Logo.svg">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>Aman Budhraja</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aman Budhraja | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!--Preloader-->
-    <div class="preload">
-        <svg
-          width="137"
-          height="102"
-          viewBox="0 0 137 102"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="logo"
-        >
-          <path
-            d="M108.5 8V6.5H107H8H6.5V8V94V95.5H8H107H108.5V94V8ZM1.5 100.5V1.5H113.5V100.5H1.5Z"
-            stroke="#74EBD5"
-            stroke-width="3"
-          />
-          <path
-            d="M21.6406 68.5H22.7218L23.0637 67.4743L25.0655 61.4688H35.2348L37.2581 67.4786L37.602 68.5H38.6797H46.1562H46.2734H47.7734H48.3194H54.5469H56.0469V67V49.4808C56.3217 49.0644 56.6356 48.7762 56.9802 48.5788C57.4071 48.3341 57.9673 48.1797 58.7188 48.1797C59.9288 48.1797 60.3846 48.472 60.5463 48.6556C60.7655 48.9044 61.0391 49.5183 61.0391 50.8516V67V68.5H62.5391H69.3125H70.8145L70.8125 66.998L70.7895 49.8952C71.0749 49.2843 71.4169 48.8921 71.7806 48.6415C72.1891 48.3602 72.7373 48.1797 73.5078 48.1797C74.7577 48.1797 75.1944 48.4834 75.3342 48.6504L75.3398 48.6571L75.3455 48.6637C75.5635 48.918 75.8281 49.5288 75.8281 50.8281V67V68.5H77.3281H84.125H85.625V67V50.8047C85.625 47.4171 84.9241 44.5991 83.2584 42.6217C81.5466 40.5735 79.0137 39.6719 75.9688 39.6719C72.9821 39.6719 70.4659 40.6229 68.5156 42.5222C67.9487 41.8492 67.2785 41.2839 66.5035 40.8383C65.1026 40.0329 63.4523 39.6719 61.625 39.6719C59.3437 39.6719 57.3219 40.2216 55.6061 41.3306L55.5176 40.1406H54.125H47.7734H46.2734V41.6406V63.0342L34.7876 32.3492L34.423 31.375H33.3828H26.8672H25.825L25.4614 32.3517L12.7583 66.4767L12.0051 68.5H14.1641H21.6406ZM111.031 61.5391V60.0391H109.531H100.149L110.352 46.5535L110.656 46.152V45.6484V41.6406V40.1406H109.156H88.8359H87.3359V41.6406V47.125V48.625H88.8359H97.3962L87.2887 61.9693L86.9844 62.371V62.875V67V68.5H88.4844H109.531H111.031V67V61.5391ZM135.453 61.5391V60.0391H133.953H124.571L134.774 46.5535L135.078 46.152V45.6484V41.6406V40.1406H133.578H113.258H111.758V41.6406V47.125V48.625H113.258H121.818L111.711 61.9693L111.406 62.371V62.875V67V68.5H112.906H133.953H135.453V67V61.5391ZM27.9615 52.7734L30.1328 46.2356L32.3281 52.7734H27.9615Z"
-            stroke="white"
-            stroke-width="3"
-          />
-        </svg>
-      </div>
+<body class="bg-white text-gray-800 font-sans">
 
-    <!--Sticky Cta-->
-    <div class="fixed bottom-0 right-0 p-4 cta-block">
-        <a class="mb-4 cta" href="https://www.linkedin.com/in/aman-budhraja-a2991a106/" target="_blank">
-            <svg viewBox="0 0 61 61" stroke-linecap="round" stroke-linecap="round" stroke-linecap="round" class="w-12 h-12 cta" xmlns="http://www.w3.org/2000/svg">
-                <path d="M48.2917 0H12.7083C5.69079 0 0 5.69079 0 12.7083V48.2917C0 55.3092 5.69079 61 12.7083 61H48.2917C55.3118 61 61 55.3092 61 48.2917V12.7083C61 
-                5.69079 55.3118 0 48.2917 0ZM20.3333 48.2917H12.7083V20.3333H20.3333V48.2917ZM16.5208 17.1105C14.0656 17.1105 12.0729 15.1026 12.0729 12.627C12.0729 
-                10.1514 14.0656 8.1435 16.5208 8.1435C18.9761 8.1435 20.9688 10.1514 20.9688 12.627C20.9688 15.1026 18.9786 17.1105 16.5208 17.1105ZM50.8333 48.2917H43.2083V34.0482C43.2083 
-                25.4878 33.0417 26.136 33.0417 34.0482V48.2917H25.4167V20.3333H33.0417V24.8194C36.5898 18.2466 50.8333 17.7612 50.8333 31.1125V48.2917Z" 
-                fill="lightblue"/>
-            </svg>
-        </a> 
-        <a  class="cta" href="https://github.com/AmanBudhraja" target="_blank">
-            <svg viewBox="0 0 58 58" stroke-linecap="round" stroke-linecap="round" stroke-linecap="round" class="w-12 h-12 cta" xmlns="http://www.w3.org/2000/svg">
-                <path d="M29 0C12.9872 0 0 12.9848 0 29C0 41.8132 8.3085 52.6833 19.8336 56.5186C21.2812 56.7868 21.75 55.8878 21.75 55.1242V49.7253C13.6832 51.4798 12.0036 46.3033 12.0036 46.3033C10.6841 42.9514 8.78217 42.0597 8.78217 42.0597C6.15042 40.2593 8.98275 40.2979 8.98275 40.2979C11.8948 40.5009 13.427 43.2873 13.427 43.2873C16.0128 47.7195 20.2106 46.4387 21.866 45.6968C22.1246 43.8238 22.8762 42.543 23.7075 41.8204C17.2671 41.0833 10.4956 38.5966 10.4956 27.4872C10.4956 24.3189 11.629 21.7331 13.4826 19.7031C13.1829 18.9708 12.1897 16.0201 13.7653 12.0278C13.7653 12.0278 16.2013 11.2496 21.7428 15.0002C24.0555 14.3574 26.535 14.036 29 14.0239C31.465 14.036 33.9469 14.3574 36.2645 15.0002C41.8011 11.2496 44.2323 12.0278 44.2323 12.0278C45.8103 16.0225 44.8171 18.9732 44.5174 19.7031C46.3783 21.7331 47.502 24.3213 47.502 27.4872C47.502 38.6256 40.7184 41.0785 34.2611 41.7963C35.3003 42.6953 36.25 44.4594 36.25 47.1661V55.1242C36.25 55.8951 36.714 56.8013 38.1857 56.5162C49.7012 52.6761 58 41.8083 58 29C58 12.9848 45.0153 0 29 0Z" fill="#C0D0EA"/>
-            </svg>
-        </a> 
+  <!-- Preloader -->
+  <div class="preload fixed inset-0 flex items-center justify-center bg-white z-50">
+    <span class="text-2xl font-bold animate-pulse">Loading...</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed w-full bg-white shadow-md transition-top duration-300 z-40">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <span class="font-bold text-xl">Aman Budhraja</span>
+      <div class="space-x-4">
+        <a href="#about" class="ed hover:text-blue-500">About</a>
+        <a href="#experience" class="ex hover:text-blue-500">Experience</a>
+        <a href="#projects" class="pro hover:text-blue-500">Projects</a>
+        <a href="#contact" class="con hover:text-blue-500">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="about" class="min-h-screen flex flex-col justify-center items-center bg-gray-50">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hello, I'm <span class="typing"></span></h1>
+    <p class="text-lg md:text-xl max-w-xl text-center">Aspiring Data Scientist & Frontend Developer based in Nepean, Ontario.</p>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="min-h-screen py-16 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-8">Experience</h2>
+
+    <!-- Tabs -->
+    <div class="flex justify-center space-x-2 flex-wrap mb-8">
+      <button class="tablinks px-4 py-2 bg-gray-200 rounded" data-tab="TSF">The Sparks Foundation</button>
+      <button class="tablinks px-4 py-2 bg-gray-200 rounded" data-tab="UWO">Western University</button>
+      <button class="tablinks px-4 py-2 bg-gray-200 rounded" data-tab="Accenture">Accenture</button>
     </div>
 
-    <!--Navigation-->
-    <header class="text-gray-600 body-font sticky top-0 navbar">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="./index.html">
-                <img src="./assets/Logo.svg" alt="logo" class="w-16 h-16 p-2">          
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 ed" href="#education">Education</a>
-                <a class="mr-5 ex" href="#experience">Experience</a>
-                <a class="mr-5 pro" href="#project">Project</a>
-                <a class="mr-5 con" href="#contact">Contact</a>
-            </nav>
-            <a href="https://drive.google.com/file/d/1uBODVVMg6DQByfb5pNvm5Lg-CVff4xkX/view?usp=sharing"  target="_blank" download>
-                <button class="inline-flex items-center border-2 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0">
-                    Resume
-                </button>
-            </a>
-        </div>
-    </header>
-
-    <!--AboutMe-->
-    <section>
-        <div class="container mx-auto flex px-20 py-24 md:flex-row flex-col items-center flex-2">
-            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h4 class="text-sm mb-0 font-medium style1">Hi, my name is</h4>
-                <h1 class="text-3xl font-medium style2 typing"></h1>
-                <div class=" text-3xl mb-4 font-medium style1">I like to solve Rubik's cube.</div>
-                <p class="mb-8 leading-relaxed font-medium style3">Experienced software engineer 
-                    based in Toronto, ON. I have experience with 
-                    analysing data, creating automation test 
-                    scripts, and implementing machine learning 
-                    algorithm. I am well versed with software
-                    development life cycle process and have  
-                    superb consultancy and communication skills.
-                </p>
-                <div class="flex justify-center">
-                    <button class="inline-flex py-2 px-6 focus:outline-none rounded text-lg border-2 bt1" onclick="window.location.href='#contact';">Let's Connect</button>
-                </div>
-            </div>
-            <div class="flex-1">
-                <img class="object-cover object-center rounded mx-auto" alt="hero" src="./assets/Profile.png">
-            </div>
-        </div>
-    </section>
-
-    <!--Education-->
-    <section class="mt-16" id="education">
-        <div class="container px-5 py-8 mx-auto items-center">
-            <h1 class="text-3xl font-medium mb-0 style3">Education</h1>
-        </div>
-        <div class="container flex flex-wrap px-5 mx-auto items-center">
-            <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 border-b mb-10 md:mb-0 pb-10">
-                <h1 class="text-xl font-medium mb-2 style1">University of Western Ontario</h1>
-                <p class="leading-relaxed text-base style2">Master of Engineering - Electrical and Computer Engineering</p>
-                <p class="leading-relaxed text-base style2">September 2019 - August 2020</p>
-            </div>
-            <div class="flex flex-col md:w-1/2 md:pl-12">
-                <h2 class="font-semibold tracking-wider text-md mb-3 style1">Courses</h2>
-                <nav class="flex flex-wrap list-none text-sm style2">
-                    <li class="lg:w-1/3 mb-2 w-1/2">
-                        Python Programming for Engineer
-                    </li>
-                    <li class="lg:w-1/3 mb-2 w-1/2">
-                        Data Management & Applications
-                    </li>
-                    <li class="lg:w-1/3 mb-2 w-1/2">
-                        Data Analytics Foundations
-                    </li>
-                    <li class="lg:w-1/3 mb-2 w-1/2">
-                        Cloud Computing
-                    </li>
-                    <li class="lg:w-1/3 mb-2 w-1/2">
-                        Risk Assessment & Management
-                    </li>
-                </nav>
-            </div>
-        </div>
-        <div class="container flex flex-wrap px-5 py-20 mx-auto items-center">
-            <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b">
-                <h1 class="text-xl font-medium mb-2 style1">Guru Gobind Singh Indraprastha University</h1>
-                <p class="leading-relaxed text-base style2">Bachelor of Technology - Electronics and Communication Engineering</p>
-                <p class="leading-relaxed text-base style2">August 2013 - May 2017</p>
-            </div>
-            <div class="flex flex-col md:w-1/2 md:pl-12">
-                <h2 class="font-semibold tracking-wider text-md mb-3 style1">Courses</h2>
-                <nav class="flex flex-wrap list-none -mb-1 text-sm style2">
-                    <li class="lg:w-1/3 mb-1 w-1/2">
-                        Data Structures
-                    </li>
-                    <li class="lg:w-1/3 mb-1 w-1/2">
-                        Linux Programming & Administration
-                    </li>
-                    <li class="lg:w-1/3 mb-1 w-1/2">
-                        Database Management System
-                    </li>
-                    <li class="lg:w-1/3 mb-1 w-1/2">
-                        Switching Theory & Logic Design
-                    </li>
-                </nav>
-            </div>
-        </div>
-    </section>
-      
-    <!--Experience-->  
-    <section
-      class="overflow-hidden mt-16 min-h-screen"
-      id="experience"
-    >
-      <div class="container px-5 py-8 mx-auto">
-        <h1 class="text-3xl font-medium mb-14 style3">Experience</h1>
-        <div class="tab">
-          <button
-            class="tablinks"
-            onclick="openCity(event, 'TSF')"
-            id="defaultOpen"
-          >
-            The Sparks Foundation
-          </button>
-          <button class="tablinks" onclick="openCity(event, 'UWO')">
-            Western University
-          </button>
-          <button class="tablinks" onclick="openCity(event, 'Accenture')">
-            Accenture
-          </button>
-          <button class="tablinks" onclick="openCity(event, 'Phulkari')">
-            Phulkari The Suit Shop
-          </button>
-          <button class="tablinks" onclick="openCity(event, 'DRDO')">
-            Defense Research and Development Organisation (DRDO)
-          </button>
-        </div>
-
-        <div id="TSF" class="tabcontent">
-          <h1>Data Science and Business Analytics Intern</h1>
-          <h4>November 2020 - December 2020</h4>
-          <ul class="text-base list-disc ml-5">
-            <li>
-              Built an Excel dashboard for for-profit model analyses of the
-              company.
-            </li>
-            <li>
-              Implemented various machine learning models like K-means
-              clustering, Decision Tree to get a better understanding of
-              business assumptions and their impact.
-            </li>
-            <li>
-              Performed exploratory data analysis on different datasets like
-              Covid-19, Sports (IPL) using Excel, Tableau, and Python to
-              determine their influence on the profit of a company.
-            </li>
-          </ul>
-        </div>
-        <div id="UWO" class="tabcontent">
-          <h1>AI Research Student</h1>
-          <h4>January 2020 - August 2020</h4>
-          <ul class="text-base list-disc ml-5">
-            <li>
-              Engineered a model that can detect all possible relations between
-              objects in an image, with 70% accuracy.
-            </li>
-            <li>
-              Visualized and analyzed data using Tableau for Exploratory Data
-              Analysis.
-            </li>
-            <li>
-              Incorporated transfer learning: forming a model that can take
-              advantage of the field of computer vision and natural language
-              processing (NLP).
-            </li>
-            <li>
-              Identified trends in the subject-predicate-object pair, i.e. a
-              language bias, and used NLP to improve the overall performance of
-              the model.
-            </li>
-            <li>
-              Utilized heatmaps, confusion matrix, and mean absolute error to
-              train and optimize the accuracy of the model.
-            </li>
-          </ul>
-        </div>
-        <div id="Accenture" class="tabcontent">
-          <h1>Application Development Associate</h1>
-          <h4>January 2018 - July 2019</h4>
-          <ul class="text-base list-disc ml-5">
-            <li>
-              Delegated to handle automation testing of web-based applications
-              and outline test strategy, cases, and scripts.
-            </li>
-            <li>
-              Created test cases based upon the understanding and analyzing the
-              test requirements and tracking continuous changes and maintenance
-              of the test requirements.
-            </li>
-            <li>
-              Developed automation testing framework with my team for regression
-              test cases using Selenium with Python, improving the execution
-              time by almost 80%.
-            </li>
-            <li>
-              Utilized SoapUI tool & Postman for API testing (i.e. Rest, Soap)
-              and Appium for testing mobile application.
-            </li>
-            <li>
-              Incorporated defect management strategies using Jira and/or QC
-              ALM, reducing the overall time required to diagnose a defect or
-              issue.
-            </li>
-            <li>
-              Participated in defect triages and assisted the development team with defect retesting.
-            </li>
-          </ul>
-        </div>
-        <div id="Phulkari" class="tabcontent">
-          <h1>Inventory Control Specialist</h1>
-          <h4>January 2013 - November 2017</h4>
-          <ul class="text-base list-disc ml-5">
-            <li>
-              Utilized CRM tools for business management, customer tracking, and
-              marketing.
-            </li>
-            <li>
-              Monitored and maintained current inventory levels and processed
-              purchasing orders as required.
-            </li>
-            <li>
-              Recorded the purchases, maintained the database, performed a
-              physical count of inventory, and reconciled the actual stock count
-              to computer-generated reports.
-            </li>
-            <li>
-              Performed safety checks and maintenance of the POS systems
-              including software and hardware updates.
-            </li>
-            <li>
-              Always ensured a professional and courteous environment in order
-              to achieve customer satisfaction.
-            </li>
-          </ul>
-        </div>
-        <div id="DRDO" class="tabcontent">
-          <h1>Research Intern</h1>
-          <h4>June 2016 - July 2016</h4>
-          <ul class="text-base list-disc ml-5">
-            <li>
-              Studied control operation and data acquisition of LASER.
-            </li>
-            <li>
-              Created an interface for data acquisition for both digital and analog signals on LABVIEW.
-            </li>
-            <li>
-              Visualized and analyzed the data obtained using Excel to find the relation between various signal
-              data obtained.
-            </li>
-          </ul>
-        </div>
+    <!-- Tab Content -->
+    <div class="max-w-4xl mx-auto">
+      <div id="TSF" class="tabcontent opacity-0 transition-opacity duration-500">
+        <h3 class="text-2xl font-semibold mb-2">Data Science Intern</h3>
+        <p>Worked on Excel dashboards, ML models, and Python data analysis projects.</p>
       </div>
-    </section>
+      <div id="UWO" class="tabcontent opacity-0 transition-opacity duration-500">
+        <h3 class="text-2xl font-semibold mb-2">BSc in Computer Science</h3>
+        <p>Focused on Data Science, AI, and Web Development courses.</p>
+      </div>
+      <div id="Accenture" class="tabcontent opacity-0 transition-opacity duration-500">
+        <h3 class="text-2xl font-semibold mb-2">Software Developer Intern</h3>
+        <p>Developed internal tools and improved web applications for clients.</p>
+      </div>
+    </div>
+  </section>
 
-    <!--Projects-->
-    <section class="overflow-hidden min-h-screen" id="project">
-        <div class="container px-5 py-8 mx-auto">
-            <h1 class="text-3xl font-medium title-font mb-14 style3">Projects</h1>
-          <div class="flex flex-wrap">
-            <div class="p-4 md:w-1/3">
-              <div
-                class="h-full border-4 border-opacity-60 rounded-lg overflow-hidden relative project-border"
-              >
-                <div class="p-4">
-                  <h1 class="text-lg font-medium mb-3 style1">
-                    Visual Relationship Detection 
-                  </h1>
-                  <p class="leading-relaxed mb-16 style2">
-                    The visual relationship detection is identifying the relations between objects in an image. The 
-                    machine learning algorithms used, require a large database as the models were trained for almost 
-                    every type of relationship, which this project tries to tackle.
-                  </p>
-                  <div
-                    class="flex items-center flex-wrap absolute bottom-2 right-4"
-                  >
-                    <a class="inline-flex items-center md:mb-2 lg:mb-0 project-git" href="https://github.com/AmanBudhraja/Visual-Relationship-VRD" target="_blank">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 58 58"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M29 0C12.9872 0 0 12.9848 0 29C0 41.8132 8.3085 52.6833 19.8336 56.5186C21.2812 56.7868 21.75 55.8878 21.75 55.1242V49.7253C13.6832 51.4798 12.0036 46.3033 12.0036 46.3033C10.6841 42.9514 8.78217 42.0597 8.78217 42.0597C6.15042 40.2593 8.98275 40.2979 8.98275 40.2979C11.8948 40.5009 13.427 43.2873 13.427 43.2873C16.0128 47.7195 20.2106 46.4387 21.866 45.6968C22.1246 43.8238 22.8762 42.543 23.7075 41.8204C17.2671 41.0833 10.4956 38.5966 10.4956 27.4872C10.4956 24.3189 11.629 21.7331 13.4826 19.7031C13.1829 18.9708 12.1897 16.0201 13.7653 12.0278C13.7653 12.0278 16.2013 11.2496 21.7428 15.0002C24.0555 14.3574 26.535 14.036 29 14.0239C31.465 14.036 33.9469 14.3574 36.2645 15.0002C41.8011 11.2496 44.2323 12.0278 44.2323 12.0278C45.8103 16.0225 44.8171 18.9732 44.5174 19.7031C46.3783 21.7331 47.502 24.3213 47.502 27.4872C47.502 38.6256 40.7184 41.0785 34.2611 41.7963C35.3003 42.6953 36.25 44.4594 36.25 47.1661V55.1242C36.25 55.8951 36.714 56.8013 38.1857 56.5162C49.7012 52.6761 58 41.8083 58 29C58 12.9848 45.0153 0 29 0Z"
-                          fill="#C0D0EA"
-                        />
-                      </svg>
-                    </a>
-                    <a class="ml-2 inline-flex items-center md:mb-2 lg:mb-0 project-demo">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24"
-                        width="24"
-                        role="img"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-external-link"
-                      >
-                        <path
-                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                        ></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="text-xs absolute bottom-2 style3 font-medium">
-                    <p>Python, Tensorflow, OpenCV, Git</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3">
-              <div
-                class="h-full border-4 border-opacity-60 rounded-lg overflow-hidden relative project-border"
-              >
-                <div class="p-4">
-                  <h1 class="text-lg font-medium mb-3 style1">
-                    Railway System Database
-                  </h1>
-                  <p class="leading-relaxed mb-16 style2">
-                    Designed a database for railway system. The project included
-                    designing an entity-relationship diagram, relational model,
-                    SQL Schema and an OLAP cube. ETL process were incorporated to
-                    populate the OLAP cube.
-                  </p>
-                  <div
-                    class="flex items-center flex-wrap absolute bottom-2 right-4"
-                  >
-                    <a class="inline-flex items-center md:mb-2 lg:mb-0 project-git" href="https://github.com/AmanBudhraja/Railway-System-Database" target="_blank">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 58 58"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M29 0C12.9872 0 0 12.9848 0 29C0 41.8132 8.3085 52.6833 19.8336 56.5186C21.2812 56.7868 21.75 55.8878 21.75 55.1242V49.7253C13.6832 51.4798 12.0036 46.3033 12.0036 46.3033C10.6841 42.9514 8.78217 42.0597 8.78217 42.0597C6.15042 40.2593 8.98275 40.2979 8.98275 40.2979C11.8948 40.5009 13.427 43.2873 13.427 43.2873C16.0128 47.7195 20.2106 46.4387 21.866 45.6968C22.1246 43.8238 22.8762 42.543 23.7075 41.8204C17.2671 41.0833 10.4956 38.5966 10.4956 27.4872C10.4956 24.3189 11.629 21.7331 13.4826 19.7031C13.1829 18.9708 12.1897 16.0201 13.7653 12.0278C13.7653 12.0278 16.2013 11.2496 21.7428 15.0002C24.0555 14.3574 26.535 14.036 29 14.0239C31.465 14.036 33.9469 14.3574 36.2645 15.0002C41.8011 11.2496 44.2323 12.0278 44.2323 12.0278C45.8103 16.0225 44.8171 18.9732 44.5174 19.7031C46.3783 21.7331 47.502 24.3213 47.502 27.4872C47.502 38.6256 40.7184 41.0785 34.2611 41.7963C35.3003 42.6953 36.25 44.4594 36.25 47.1661V55.1242C36.25 55.8951 36.714 56.8013 38.1857 56.5162C49.7012 52.6761 58 41.8083 58 29C58 12.9848 45.0153 0 29 0Z"
-                          fill="#C0D0EA"
-                        />
-                      </svg>
-                    </a>
-                    <a class="ml-2 inline-flex items-center md:mb-2 lg:mb-0 project-demo">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24"
-                        width="24"
-                        role="img"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-external-link"
-                      >
-                        <path
-                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                        ></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="text-xs absolute bottom-2 style3 font-medium">
-                    <p>SQL, Oracle Cloud</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3">
-              <div
-                class="h-full border-4 project-border border-opacity-60 rounded-lg overflow-hidden relative"
-              >
-                <div class="p-4">
-                  <h1 class="text-lg font-medium mb-3 style1">
-                    Multi Format Text Extraction and Text-to-Speech Synthesis
-                  </h1>
-                  <p class="leading-relaxed style2 mb-16">
-                    Developed an application for text extraction and speech
-                    synthesis using Python and Kivy for creating a GUI interface.
-                  </p>
-                  <div
-                    class="flex items-center flex-wrap absolute bottom-2 right-4"
-                  >
-                    <a class="inline-flex items-center md:mb-2 lg:mb-0 project-git" href="https://github.com/AmanBudhraja/Multi-Format-Text-Extraction-and-Text-to-Speech-Synthesis" target="_blank">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 58 58"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M29 0C12.9872 0 0 12.9848 0 29C0 41.8132 8.3085 52.6833 19.8336 56.5186C21.2812 56.7868 21.75 55.8878 21.75 55.1242V49.7253C13.6832 51.4798 12.0036 46.3033 12.0036 46.3033C10.6841 42.9514 8.78217 42.0597 8.78217 42.0597C6.15042 40.2593 8.98275 40.2979 8.98275 40.2979C11.8948 40.5009 13.427 43.2873 13.427 43.2873C16.0128 47.7195 20.2106 46.4387 21.866 45.6968C22.1246 43.8238 22.8762 42.543 23.7075 41.8204C17.2671 41.0833 10.4956 38.5966 10.4956 27.4872C10.4956 24.3189 11.629 21.7331 13.4826 19.7031C13.1829 18.9708 12.1897 16.0201 13.7653 12.0278C13.7653 12.0278 16.2013 11.2496 21.7428 15.0002C24.0555 14.3574 26.535 14.036 29 14.0239C31.465 14.036 33.9469 14.3574 36.2645 15.0002C41.8011 11.2496 44.2323 12.0278 44.2323 12.0278C45.8103 16.0225 44.8171 18.9732 44.5174 19.7031C46.3783 21.7331 47.502 24.3213 47.502 27.4872C47.502 38.6256 40.7184 41.0785 34.2611 41.7963C35.3003 42.6953 36.25 44.4594 36.25 47.1661V55.1242C36.25 55.8951 36.714 56.8013 38.1857 56.5162C49.7012 52.6761 58 41.8083 58 29C58 12.9848 45.0153 0 29 0Z"
-                          fill="#C0D0EA"
-                        />
-                      </svg>
-                    </a>
-                    <a class="ml-2 inline-flex items-center md:mb-2 lg:mb-0 project-demo">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24"
-                        width="24"
-                        role="img"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-external-link"
-                      >
-                        <path
-                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                        ></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="text-xs absolute bottom-2 font-medium style3">
-                    <p>Python, Kivy framework</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3">
-              <div
-                class="h-full project-border border-4 border-opacity-60 rounded-lg overflow-hidden relative"
-              >
-                <div class="p-4 ">
-                  <h1 class="text-lg font-medium mb-3 style1">
-                    Speech Command Recognition
-                  </h1>
-                  <p class="leading-relaxed mb-16 style2">
-                    Created a machine learning model to recognise English words in
-                    an audio file, having an accuracy of 93%.
-                  </p>
-                  <div
-                    class="flex items-center flex-wrap absolute bottom-2 right-4"
-                  >
-                    <a class="inline-flex items-center md:mb-2 lg:mb-0 project-git" href="https://github.com/AmanBudhraja/Speech-Command-Recognition" target="_blank">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 58 58"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M29 0C12.9872 0 0 12.9848 0 29C0 41.8132 8.3085 52.6833 19.8336 56.5186C21.2812 56.7868 21.75 55.8878 21.75 55.1242V49.7253C13.6832 51.4798 12.0036 46.3033 12.0036 46.3033C10.6841 42.9514 8.78217 42.0597 8.78217 42.0597C6.15042 40.2593 8.98275 40.2979 8.98275 40.2979C11.8948 40.5009 13.427 43.2873 13.427 43.2873C16.0128 47.7195 20.2106 46.4387 21.866 45.6968C22.1246 43.8238 22.8762 42.543 23.7075 41.8204C17.2671 41.0833 10.4956 38.5966 10.4956 27.4872C10.4956 24.3189 11.629 21.7331 13.4826 19.7031C13.1829 18.9708 12.1897 16.0201 13.7653 12.0278C13.7653 12.0278 16.2013 11.2496 21.7428 15.0002C24.0555 14.3574 26.535 14.036 29 14.0239C31.465 14.036 33.9469 14.3574 36.2645 15.0002C41.8011 11.2496 44.2323 12.0278 44.2323 12.0278C45.8103 16.0225 44.8171 18.9732 44.5174 19.7031C46.3783 21.7331 47.502 24.3213 47.502 27.4872C47.502 38.6256 40.7184 41.0785 34.2611 41.7963C35.3003 42.6953 36.25 44.4594 36.25 47.1661V55.1242C36.25 55.8951 36.714 56.8013 38.1857 56.5162C49.7012 52.6761 58 41.8083 58 29C58 12.9848 45.0153 0 29 0Z"
-                          fill="#C0D0EA"
-                        />
-                      </svg>
-                    </a>
-                    <a class="ml-2 inline-flex items-center md:mb-2 lg:mb-0 project-demo">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24"
-                        width="24"
-                        role="img"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-external-link"
-                      >
-                        <path
-                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                        ></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="text-xs absolute bottom-2 style3">
-                    <p>Python, Tensorflow, Git</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3">
-              <div
-                class="h-full border-4 project-border border-opacity-60 rounded-lg overflow-hidden relative"
-              >
-                <div class="p-4 relative">
-                  <h1 class="text-lg font-medium mb-3 style1">
-                    Hand Gesture Controlled Robot with Face Detection and
-                    Recognition Capabilities
-                  </h1>
-                  <p class="leading-relaxed mb-16 style2">
-                    Built a gesture controlled robot that could detect and
-                    recognize the face of a person, with an accuracy of 78%.
-                  </p>
-                  <div
-                    class="flex items-center flex-wrap absolute bottom-2 right-4"
-                  >
-                    <a class="inline-flex items-center md:mb-2 lg:mb-0 project-git" href="https://github.com/AmanBudhraja/Hand-Gesture-Controlled-Robot-with-Face-Detection-and-Recognition-Capabilities" target="_blank">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 58 58"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M29 0C12.9872 0 0 12.9848 0 29C0 41.8132 8.3085 52.6833 19.8336 56.5186C21.2812 56.7868 21.75 55.8878 21.75 55.1242V49.7253C13.6832 51.4798 12.0036 46.3033 12.0036 46.3033C10.6841 42.9514 8.78217 42.0597 8.78217 42.0597C6.15042 40.2593 8.98275 40.2979 8.98275 40.2979C11.8948 40.5009 13.427 43.2873 13.427 43.2873C16.0128 47.7195 20.2106 46.4387 21.866 45.6968C22.1246 43.8238 22.8762 42.543 23.7075 41.8204C17.2671 41.0833 10.4956 38.5966 10.4956 27.4872C10.4956 24.3189 11.629 21.7331 13.4826 19.7031C13.1829 18.9708 12.1897 16.0201 13.7653 12.0278C13.7653 12.0278 16.2013 11.2496 21.7428 15.0002C24.0555 14.3574 26.535 14.036 29 14.0239C31.465 14.036 33.9469 14.3574 36.2645 15.0002C41.8011 11.2496 44.2323 12.0278 44.2323 12.0278C45.8103 16.0225 44.8171 18.9732 44.5174 19.7031C46.3783 21.7331 47.502 24.3213 47.502 27.4872C47.502 38.6256 40.7184 41.0785 34.2611 41.7963C35.3003 42.6953 36.25 44.4594 36.25 47.1661V55.1242C36.25 55.8951 36.714 56.8013 38.1857 56.5162C49.7012 52.6761 58 41.8083 58 29C58 12.9848 45.0153 0 29 0Z"
-                          fill="#C0D0EA"
-                        />
-                      </svg>
-                    </a>
-                    <a class="ml-2 inline-flex items-center md:mb-2 lg:mb-0 project-demo">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24"
-                        width="24"
-                        role="img"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-external-link"
-                      >
-                        <path
-                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                        ></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="text-xs absolute bottom-2 style3">
-                    <p>C#, VSCode, OpenCV, Git</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- Projects Section -->
+  <section id="projects" class="min-h-screen py-16 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4">
+      <div class="project-border p-4 border rounded shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <h3 class="font-semibold text-xl mb-2">Portfolio Website</h3>
+        <p class="text-sm mb-2">Built using HTML, TailwindCSS, and JS.</p>
+        <div class="flex space-x-2 flex-wrap">
+          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">HTML</span>
+          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">CSS</span>
+          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">JS</span>
         </div>
-      </section>  
+        <a href="#" class="text-blue-500 mt-2 inline-block">Live Demo</a>
+      </div>
 
-    <!--contact-->
-    <section class="relative" id="contact">
-        <div class="container px-5 py-8 mx-auto">
-            <div class="flex flex-col text-center w-full mb-8">
-                <h1 class="text-3xl font-medium mb-4 style1">Let's Connect</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base style2">I am looking for new opportunities. Whether you have a question or just want to 'Hi', lets connect.</p>
-            </div>
-            <div class="lg:w-1/2 md:w-2/3 mx-auto">
-                <form action="https://formspree.io/f/mvovjvll" method="POST" enctype="application/x-www-form-urlencoded">
-                    <div class="flex flex-wrap -m-2">
-                        <div class="p-2 w-1/2">
-                            <div class="relative">
-                                <label for="name" class="leading-7 text-sm style2">Name</label>
-                                <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                            </div>
-                        </div>
-                    <div class="p-2 w-1/2">
-                        <div class="relative">
-                            <label for="email" class="leading-7 text-sm style2">Email</label>
-                            <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                        </div>
-                    </div>
-                    <div class="p-2 w-full">
-                        <div class="relative">
-                            <label for="message" class="leading-7 text-sm style2">Message</label>
-                            <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                        </div>
-                    </div>
-                    <div class="p-2 mt-4 mb-4 w-full">
-                        <input type="submit" class="submit-button flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                    </div>
-                </form>
-                <div class="p-2 w-full pt-8 border-t border-gray-200 text-center">
-                    <a class="text-indigo-500">abudhraja06@email.com</a>
-                    <br><span class="inline-flex">
-                    <a class="text-gray-500" href="https://www.facebook.com/aman.budhraja.9">
-                        <svg stroke-linecap="round" stroke-linecap="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" fill="#C0D0EA"></path>
-                        </svg>
-                    </a>
-                    <a class="ml-4 text-gray-500" href="https://github.com/AmanBudhraja">
-                        <svg viewBox="0 0 58 58" stroke-linecap="round" stroke-linecap="round" stroke-linecap="round" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M29 0C12.9872 0 0 12.9848 0 29C0 41.8132 8.3085 52.6833 19.8336 56.5186C21.2812 56.7868 21.75 55.8878 21.75 55.1242V49.7253C13.6832 51.4798 12.0036 46.3033 12.0036 46.3033C10.6841 42.9514 8.78217 42.0597 8.78217 42.0597C6.15042 40.2593 8.98275 40.2979 8.98275 40.2979C11.8948 40.5009 13.427 43.2873 13.427 43.2873C16.0128 47.7195 20.2106 46.4387 21.866 45.6968C22.1246 43.8238 22.8762 42.543 23.7075 41.8204C17.2671 41.0833 10.4956 38.5966 10.4956 27.4872C10.4956 24.3189 11.629 21.7331 13.4826 19.7031C13.1829 18.9708 12.1897 16.0201 13.7653 12.0278C13.7653 12.0278 16.2013 11.2496 21.7428 15.0002C24.0555 14.3574 26.535 14.036 29 14.0239C31.465 14.036 33.9469 14.3574 36.2645 15.0002C41.8011 11.2496 44.2323 12.0278 44.2323 12.0278C45.8103 16.0225 44.8171 18.9732 44.5174 19.7031C46.3783 21.7331 47.502 24.3213 47.502 27.4872C47.502 38.6256 40.7184 41.0785 34.2611 41.7963C35.3003 42.6953 36.25 44.4594 36.25 47.1661V55.1242C36.25 55.8951 36.714 56.8013 38.1857 56.5162C49.7012 52.6761 58 41.8083 58 29C58 12.9848 45.0153 0 29 0Z" fill="#C0D0EA"/>
-                        </svg>
-                    </a>
-                    <a class="ml-4 text-gray-500" href="https://www.linkedin.com/in/aman-budhraja-a2991a106/">
-                        <svg viewBox="0 0 61 61" stroke-linecap="round" stroke-linecap="round" stroke-linecap="round" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M48.2917 0H12.7083C5.69079 0 0 5.69079 0 12.7083V48.2917C0 55.3092 5.69079 61 12.7083 61H48.2917C55.3118 61 61 55.3092 61 48.2917V12.7083C61 5.69079 55.3118 0 48.2917 0ZM20.3333 48.2917H12.7083V20.3333H20.3333V48.2917ZM16.5208 17.1105C14.0656 17.1105 12.0729 15.1026 12.0729 12.627C12.0729 10.1514 14.0656 8.1435 16.5208 8.1435C18.9761 8.1435 20.9688 10.1514 20.9688 12.627C20.9688 15.1026 18.9786 17.1105 16.5208 17.1105ZM50.8333 48.2917H43.2083V34.0482C43.2083 25.4878 33.0417 26.136 33.0417 34.0482V48.2917H25.4167V20.3333H33.0417V24.8194C36.5898 18.2466 50.8333 17.7612 50.8333 31.1125V48.2917Z" fill="#C0D0EA"/>
-                        </svg>
-                    </a>                        
-                </span>
-                </div>
-                </div>
-          </div>
+      <div class="project-border p-4 border rounded shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <h3 class="font-semibold text-xl mb-2">Data Analysis Dashboard</h3>
+        <p class="text-sm mb-2">Analyzed datasets with Python & Pandas, visualized with Plotly.</p>
+        <div class="flex space-x-2 flex-wrap">
+          <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Python</span>
+          <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Pandas</span>
+          <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Plotly</span>
         </div>
-      </section>
-      <script src="./app.js"></script>
+        <a href="#" class="text-blue-500 mt-2 inline-block">Live Demo</a>
+      </div>
 
+      <div class="project-border p-4 border rounded shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <h3 class="font-semibold text-xl mb-2">ML Model Deployment</h3>
+        <p class="text-sm mb-2">Deployed ML model with Flask & Docker.</p>
+        <div class="flex space-x-2 flex-wrap">
+          <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Python</span>
+          <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Flask</span>
+          <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Docker</span>
+        </div>
+        <a href="#" class="text-blue-500 mt-2 inline-block">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="min-h-screen py-16 bg-white flex flex-col items-center justify-center">
+    <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+    <p class="mb-4">Reach out via email: <a href="mailto:aman@example.com" class="text-blue-500">aman@example.com</a></p>
+  </section>
+
+  <script src="app.js"></script>
 </body>
 </html>
